@@ -36,7 +36,7 @@ app.get('/dbError', function(){
 	res.render('Error');
 });
 app.use('/upload', require('./routes/ftp'));
-//app.use('/', require('./routes/login'));
+app.use('/login', require('./routes/login'));
 app.get('/asdf', function(req, res){
 	var fdsa = '\'\'\'ASDF\'\'\'';	// '''asdf'''
 	var kihara = '==ASDF==';	//==asdf==
