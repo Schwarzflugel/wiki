@@ -39,7 +39,7 @@ app.use('/upload', require('./routes/ftp'));
 //app.use('/', require('./routes/login'));
 app.get('/asdf', function(req, res){
 	var fdsa = '\'\'\'ASDF\'\'\'';	// '''asdf'''
-	var kihara = '==ASDF==';
+	var kihara = '==ASDF==';	//==asdf==
 	replaceTag(fdsa);
 	replaceTag(kihara);
 	res.redirect('/');

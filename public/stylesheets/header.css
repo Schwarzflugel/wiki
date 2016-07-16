@@ -1,0 +1,41 @@
+
+@media screen and (max-device-width:480px) {
+    body{
+        font: 21pt sans-serif;
+    }
+    #main_content{
+        padding: 16pt;
+    }
+}
+@media screen and (min-device-width:481px) {
+    body{
+        background-color: #efefef;
+        font: 14pt sans-serif;
+
+    }
+    #main_content{
+        display: block;
+        margin: 0 auto;
+        padding: 16pt;
+        width: 70%;
+        background-color: white;
+    }
+    #login_button{
+        margin-top: 20pt;
+    }
+    #sign_up{
+        border: none;
+        text-align:center ;
+        display: inline-block;
+        background-color: #00B7FF;
+        height: 42pt;
+        width: 126pt;
+    }
+    #submit{
+        border: none;
+        text-align:center ;
+        display: inline-block;
+        height: 42pt;
+        width: 126pt;
+    }
+}

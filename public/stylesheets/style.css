@@ -1,0 +1,137 @@
+a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+
+/*media query for moblie*/
+@media only screen and (max-device-width: 480px) {
+  body {
+    font: 21pt sans-serif;
+  }
+  .title{
+    visibility: hidden;
+  }
+
+  .category{
+    visibility: hidden;
+  }
+  .summary{
+    visibility: hidden;
+  }
+  .main_content{
+    width: 95%;
+    margin: 0 auto;
+  }
+  .outer_link_img{
+    width: 21px;
+    height: 21px;
+  }
+  .content_quote{
+    overflow: scroll;
+    width: auto;
+    height: 100px;
+    padding: 10px 0px 15px 20px;
+    border: dashed 5px #cccccc;
+  }
+  .quote_content{
+    margin-left: 5px;
+    display: inline;
+  }
+  .content_img{
+    overflow: scroll;
+  }
+}
+
+/*media query for desktop*/
+@media only screen and (min-device-width:481px){
+  body {
+    background-color: #efefef;
+    font: 14pt sans-serif;
+  }
+  #title_container{
+  }
+  .title{font-size: 2rem;
+    font-weight: bold;
+  }
+  .category{}
+  .main_content{
+    background-color: white;
+    height: 100%;
+    width: 70%;
+    padding: 16px;
+    margin: 0 auto;
+  }
+  .outer_link_img{
+    width: 14px;
+    height: 14px;
+  }
+  .content_quote{
+    width: auto;
+    height: 100px;
+    padding: 10px 0px 15px 20px;
+    border: dashed 5px #cccccc;
+  }
+  .quote_content{
+    margin-left: 5px;
+    font-size: 1.2em;
+    display: inline;
+  }
+  .content_img{}
+}
+
+.content_table{
+  display: inline-block;
+  padding: 5px 20px 12px 5px;
+  border: solid 1px #cccccc;
+}
+
+#table_title{
+  font-size: 1.3em;
+}
+.intent_1{padding-left: 20px}
+.intent_2{padding-left: 35px;}
+.intent_3{padding-left: 50px;}
+.intent_4{padding-left: 65px;}
+.intent_5{padding-left: 80px;}
+.intent_6{padding-left: 95px;}
+
+.content_default{}
+.inner_link{}
+.link{}
+.outer_link{color: orange;}/*outer_link_img는 media query부분으로*/
+.redirect{}
+.outline{
+  border-bottom: solid 1px #ccc;
+}
+.content_strong{}
+.content_em{}
+.content_del{}
+.content_downline{}
+.content_up{}
+.content_down{}
+.border{
+  border: solid 1px #cccccc;
+}
+.remark{
+  display: none;
+}
+.content_mov{
+
+}
+.list_holder{  }
+.list_item{}
+.footnote{}
+.footnote_spoiler{}
+.footnote_list{
+  margin-top: 10px;
+  border-top: solid 1px #cccccc;
+}
+/*content_quote는 media query로*/
+.quote_spot{
+  width: 32px;
+  height: 32px;
+}
+/*quote_content는 media query로*/
+.content_frame{}
+.frame_title{}
+.frame_content{}

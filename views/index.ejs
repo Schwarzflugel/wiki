@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/style_min.css"><!--실제 서버 적용 css-->
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  <!--link rel="stylesheet" type="text/css" href="stylesheets/header.css">
+  link rel="stylesheet" type="text/css" href="stylesheets/header_min.css">-->
+  <link rel="stylesheet" type="text/css" href="stylesheets/style_min.css"><!--실제 서버 적용 css-->
   <title>Title</title>
 </head>
 <body>
 <!-- 여기서부터 안드로이드 앱에서 웹뷰로 보여지는 구간 -->
+<header id="header">
+
+</header>
 <div class="main_content">
-  <p class="title"></p>
-  <p class="category"></p>
+  <span id="title_container">
+    <p class="title">타이틀</p>
+    <p class="category">게임 -> 닌텐도</p>
+  </span>
+
+  <p class="summary">타이틀은 타이틀이다.</p>
   <!--목차-->
   <div class="content_table" id="table">
     <p id="table_title">목차</p>
