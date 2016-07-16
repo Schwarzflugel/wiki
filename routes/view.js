@@ -2,20 +2,26 @@ var express = require('express');
 var router = express.Router();
 var main = require('../wiki');
 var reTag = require('../function/tag');
-var DB = main.wikiDB;
+var Doc = require('../DBModels/docModel');
 
-/*var datas = {
-	content: reTag('==ASDF==\'\'\'ASDF\'\'\'\nASDF')
-};*/
-var data = /*datas.content*/reTag('==ASDF==');
+/*var data = reTag('==ASDF==');
 router.get('/', function(req, res){
 	res.render('view', {
-		"body": data/*datas.content*/
+		"body": data
 	});
-});
+});*/
 router.get('/:title', function(req, res){
-	res.render('view', {
-		"body": req.params.title
+	Doc.findOne({title: req.params.title}, function(err, doc){
+		if (err){
+			return res.json({
+				success: false,
+				message: err
+			});
+		}
+		res.render('view', {
+			"title": req.params.title,
+			"body": req.params.title
+		});
 	});
 });
 

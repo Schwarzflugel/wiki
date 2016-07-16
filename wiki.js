@@ -31,6 +31,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(multipart({
 	uploadDir: __dirname + '/media'
 }));
+//
+app.use(bodyParser.json());
 
 //upload페이지
 app.use('/upload', require('./routes/ftp'));
