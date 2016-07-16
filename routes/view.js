@@ -10,7 +10,12 @@ var DB = main.wikiDB;
 var data = /*datas.content*/reTag('==ASDF==');
 router.get('/', function(req, res){
 	res.render('view', {
-		data: data/*datas.content*/
+		"body": data/*datas.content*/
+	});
+});
+router.get('/:title', function(req, res){
+	res.render('view', {
+		"body": req.params.title
 	});
 });
 

@@ -37,13 +37,9 @@ app.use('/upload', require('./routes/ftp'));
 //login페이지
 app.use('/login', require('./routes/login'));
 //view페이지
-/*app.get('/view', function(req, res){
-	var fdsa = '\'\'\'ASDF\'\'\'';	// '''ASDF'''
-	var kihara = '==ASDF==';	//==ASDF==
-	replaceTag(fdsa);
-	res.redirect('/');
-});*/
 app.use('/view', require('./routes/view'));
+//docModel
+var Doc = require('./DBModels/docModel');
 
 app.get('/', function(req, res){
 	res.render('index');
