@@ -20,6 +20,8 @@ var flash = require('connect-flash');
 //
 var path = require('path');
 var multipart = require('connect-multiparty');
+//
+var replaceTag = require('./function/tag');
 
 app.set('view engine', 'ejs');
 
@@ -35,6 +37,11 @@ app.get('/dbError', function(){
 });
 app.use('/upload', require('./routes/ftp'));
 //app.use('/', require('./routes/login'));
+app.get('/asdf', function(req, res){
+	var fdsa = '\'\'\'ASDF\'\'\'';	// '''asdf'''
+	replaceTag(fdsa);
+	res.redirect('/');
+});
 
 app.listen(3000, function(){
 	console.log('Server on');
