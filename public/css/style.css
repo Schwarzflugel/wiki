@@ -96,7 +96,7 @@ a {
 .link{}
 .outer_link{color: orange;}/*outer_link_img는 media query부분으로*/
 .redirect{}
-.paragraph_1{
+/*.paragraph_1{
   border-bottom: solid 1px #cccccc;
 }
 .paragraph_2{
@@ -113,6 +113,9 @@ a {
 }
 .paragraph_6{
   border-bottom: solid 1px #cccccc;
+}*/
+.outline{
+	border-bottom: solid 1px #ccc;
 }
 .content_strong{}
 .content_em{}

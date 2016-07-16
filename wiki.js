@@ -39,8 +39,13 @@ app.use('/upload', require('./routes/ftp'));
 //app.use('/', require('./routes/login'));
 app.get('/asdf', function(req, res){
 	var fdsa = '\'\'\'ASDF\'\'\'';	// '''asdf'''
+	var kihara = '==ASDF==';
 	replaceTag(fdsa);
+	replaceTag(kihara);
 	res.redirect('/');
+});
+app.get('/', function(req, res){
+	res.render('index');
 });
 
 app.listen(3000, function(){
