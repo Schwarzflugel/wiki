@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="stylesheets/css_min.css">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="main_content">
+    <p class="title"></p>
+    <p class="category"></p>
+    <p class="summary"></p>
+    <div class="content_table" id="table">
+        <p id="table_title">목차</p>
+        <p class="intent_1"><a href="#table-1">1.</a></p>
+        <p class="intent_2"><a href="#table-1-1">1.1.</a></p>
+        <p class="intent_3"><a href="#table-1-1-1">1.1.1.</a></p>
+        <p class="intent_4"><a href="#table-1-1-1-1">1.1.1.1.</a></p>
+        <p class="intent_5"><a href="#table-1-1-1-1-1">1.1.1.1.1.</a></p>
+        <p class="intent_6"><a href="#table-1-1-1-1-1-1">1.1.1.1.1.1.</a></p>
+    </div>
+    <div class="content_default"></div>
+    <div class="content_html"></div>
+    <a href="" class="inner_link"></a>
+    <a href="" class="link">
+    </a>
+    <a href="" class="outer_link"><img src="images/external-link.png" class="outer_link_img"></a>
+    <div class="redirect">
+        <script type='text/javascript'>
+            //location.href='http://www.example.com/';// 원하는 장소
+        </script>
+    </div>
+    <h1 class="paragraph_1"><a href="#table" class="inner_link" id="table-1">1.</a></h1>
+    <h2 class="paragraph_2"><a href="#table" class="inner_link" id="table-1-1">1.1</a></h2>
+    <h3 class="paragraph_3"><a href="#table" class="inner_link" id="table-1-1-1">1.1.1</a></h3>
+    <h4 class="paragraph_4"><a href="#table" class="inner_link" id="table-1-1-1-1">1.1.1.1</a></h4>
+    <h5 class="paragraph_5"><a href="#table" class="inner_link" id="table-1-1-1-1-1">1.1.1.1.1</a></h5>
+    <h6 class="paragraph_6"><a href="#table" class="inner_link" id="table-1-1-1-1-1-1">1.1.1.1.1.1</a></h6>
+    <strong class="content_strong"></strong>
+    <em class="content_em"></em>
+    <del class="content_del"></del>
+    <u class="content_downline"></u>
+    <sup class="content_up"></sup>
+    <sub class="content_down"></sub>
+    <img src="" class="content_img" style="">
+    <ul class="list_holder">
+        <li class="list_item" style=""></li>
+    </ul>
+    <a href="#" class="footnote">[1]</a>
+    <a href="#" class="footnote_spoiler">[스포일러]</a>
+    <div class="content_quote">
+        <img class="quote_spot" src="images/quote.png">
+        <strong class="quote_content"></strong>
+    </div>
+    <div class="border"></div>
+    <div class="remark"></div>
+    <!-- !!remark클래스는 실제로는 없는 클래스 입니다! 편집문서에만 넣어주세요-->
+    <div class="time">
+        <p class="get_time"></p>
+        <script>
+            function timefunc(){
+                var d = new Date();
+                var daten = d.toLocaleDateString();
+                var timen = d.toLocaleTimeString();
+                document.getElementsByClassName("get_time").innerHTML = daten;
+            }
+            </script>
+    </div>
+    <div class="content_frame" style="">
+        <div class="frame_title"></div>
+        <div class="frame_content"></div>
+    </div>
+    <footer>
+        <div class="footnote_list">
+
+        </div>
+    </footer>
+</div>
+<script>timefunc();</script>
+</body>
+</html>

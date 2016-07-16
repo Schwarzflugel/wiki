@@ -1,0 +1,19 @@
+{
+  "name": "0716",
+  "version": "1.0.0",
+  "description": "",
+  "main": "wiki.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Schwarzflugel/wiki.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Schwarzflugel/wiki/issues"
+  },
+  "homepage": "https://github.com/Schwarzflugel/wiki#readme"
+}

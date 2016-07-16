@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/style_min.css"><!--실제 서버 적용 css-->
+  <title>Title</title>
+</head>
+<body>
+<!-- 여기서부터 안드로이드 앱에서 웹뷰로 보여지는 구간 -->
+<div class="main_content">
+  <p class="title"></p>
+  <p class="category"></p>
+  <!--목차-->
+  <div class="content_table" id="table">
+    <p id="table_title">목차</p>
+    <!--
+      목차 테이블 형식
+      기본 형식 : #table
+      목차 번호 : #table-1 , #table-2
+      하위 번호 : #table-1-1 , #table-2-1
+      리스트 넣는 순서 : 목차 번호 1번 -> 하위 번호 -> 목차 번호 2번 -> ...
+    -->
+    <p class="intent_1"><a href="#table-1">1.</a>개요</p>
+    <p class="intent_2"><a href="#table-1-1">1.1.</a>개요</p>
+    <p class="intent_3"><a href="#table-1-1-1">1.1.1.</a>개요</p>
+    <p class="intent_4"><a href="#table-1-1-1-1">1.1.1.1.</a>개요</p>
+    <p class="intent_5"><a href="#table-1-1-1-1-1">1.1.1.1.1.</a>개요</p>
+    <p class="intent_6"><a href="#table-1-1-1-1-1-1">1.1.1.1.1.1.</a>개요</p>
+
+  </div>
+  <div class="content_default">asdf지원하지 않는 태그 or 태그가 없을땐 이거</div>
+  <div class="content_html">자체 html 소스</div>
+  <a href="#table" class="inner_link">이렇게쓰면 링크에여</a>
+  <a href="#" class="link">우타하
+    <!--다른문서로 갈때 쓰이는 링크-->
+    <!--
+
+      링크 ex) http://wiki.utaha.moe/가고싶은문서
+    -->
+  </a>
+  <a href="http://www.google.com" class="outer_link"><img src="images/external-link.png" class="outer_link_img">외부링크</a>
+  <div class="redirect">
+    <script type='text/javascript'>
+      <!--리다이렉트-->
+      //location.href='http://www.example.com/';// 원하는 장소
+    </script>
+  </div>
+  <h1 class="paragraph_1"><a href="#table" class="inner_link" id="table-1">1.</a> 뭐</h1>
+  <h2 class="paragraph_2"><a href="#table" class="inner_link" id="table-1-1">1.1</a> 뭐</h2>
+  <h3 class="paragraph_3"><a href="#table" class="inner_link" id="table-1-1-1">1.1.1</a> 뭐</h3>
+  <h4 class="paragraph_4"><a href="#table" class="inner_link" id="table-1-1-1-1">1.1.1.1</a> 뭐</h4>
+  <h5 class="paragraph_5"><a href="#table" class="inner_link" id="table-1-1-1-1-1">1.1.1.1.1</a> 뭐</h5>
+  <h6 class="paragraph_6"><a href="#table" class="inner_link" id="table-1-1-1-1-1-1">1.1.1.1.1.1</a> 뭐</h6>
+  <strong class="content_strong">힘쌔고 강한 텍스트&nbsp</strong>
+  <em class="content_em">이탤릭체&nbsp</em>
+  <del class="content_del">*중요* 취소선입니다!!</del>
+  <u class="content_downline">밑줄</u>
+  <sup class="content_up">윗첨자</sup>
+  <sub class="content_down">아랫첨자</sub>
+  <p style="color: black"></p>
+  <img src="" class="content_img" style="">
+  <!--
+  이미지 src == http://이미지서버도메인/asdf.png
+  이미지 스타일 == css 스타일
+  -->
+
+  <ul class="list_holder">
+    <li class="list_item">리스트</li>
+    <!--style="list-style: "-->
+  </ul>
+  <!--리스트는 각자 ul->li로 묶어주세요
+      스타일 == list-style-type : ;
+  -->
+
+  <div>본문</div><a href="#" class="footnote">[1]</a><br>
+  <div>본문</div><a href="#" class="footnote_spoiler">[스포일러]</a><br>
+  <div class="content_quote">
+    <img class="quote_spot" src="images/quote.png">
+    <strong class="quote_content">인용문</strong>
+  </div>
+  <div class="border"></div>
+  <div class="remark">주석</div>
+  <!-- !!remark클래스는 실제로는 없는 클래스 입니다! 편집문서에만 넣어주세요-->
+  <div class="time">
+    <script>
+      var d = new Date();
+      var daten = d.toLocaleDateString();
+      var timen = d.toLocaleTimeString();
+      document.getElementById("time").innerHTML = daten+timen;
+    </script>
+  </div> <!--시간-->
+  <div class="content_frame">
+    <!--style="border-color: "-->
+    <div class="frame_title">틀제목</div>
+    <div class="frame_content">틀 내용</div>
+  </div>
+  <footer>
+    <div class="footnote_list">
+      <!--list num data-->
+      <!--각주리스트
+      -->
+    </div>
+  </footer>
+</div>
+</body>
+</html>

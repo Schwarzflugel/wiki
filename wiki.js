@@ -24,6 +24,13 @@ app.set('view engine', 'ejs');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/', function(req, res){
+	res.render('main');
+});
+app.get('/dbError', function(){
+	res.render('Error');
+});
+
 app.listen(3000, function(){
 	console.log('Server on');
 });
