@@ -2,14 +2,15 @@ var express = require('express');
 var router = express.Router();
 var main = require('../wiki');
 var reTag = require('../function/tag');
+var DB = main.wikiDB;
 
-var datas = {
+/*var datas = {
 	content: reTag('==ASDF==\'\'\'ASDF\'\'\'\nASDF')
-};
-var data = datas.content;
+};*/
+var data = /*datas.content*/reTag('==ASDF==');
 router.get('/', function(req, res){
 	res.render('view', {
-		data : datas.content
+		data: data/*datas.content*/
 	});
 });
 
