@@ -29,21 +29,22 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 //업로드되는 파일을 __dirname/media폴더에 저장
 app.use(multipart({
-  uploadDir: __dirname + '/media'
+	uploadDir: __dirname + '/media'
 }));
 
-app.get('/dbError', function(){
-	res.render('Error');
-});
+//upload페이지
 app.use('/upload', require('./routes/ftp'));
+//login페이지
 app.use('/login', require('./routes/login'));
-app.get('/asdf', function(req, res){
-	var fdsa = '\'\'\'ASDF\'\'\'';	// '''asdf'''
-	var kihara = '==ASDF==';	//==asdf==
+//view페이지
+/*app.get('/view', function(req, res){
+	var fdsa = '\'\'\'ASDF\'\'\'';	// '''ASDF'''
+	var kihara = '==ASDF==';	//==ASDF==
 	replaceTag(fdsa);
-	replaceTag(kihara);
 	res.redirect('/');
-});
+});*/
+app.use('/view', require('./routes/view'));
+
 app.get('/', function(req, res){
 	res.render('index');
 });
