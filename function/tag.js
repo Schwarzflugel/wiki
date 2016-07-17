@@ -16,6 +16,6 @@ module.exports = function(content){
 	docContent = docContent.replace(/==([^=]*)==/g,
 		"<h1 class=\"outline\">$1</h1>");	//==$1==
 	docContent = docContent.replace(/\[\[(((?!\[\[).)*)\]\]/g,
-		"<a href=\"/view/$1\">$1</a>");
+		"<a href=\"/view/$1\">$1</a>");		//[[$1]]
 	return docContent;
 };
