@@ -3,13 +3,13 @@ var express = require('express');
 var app = express();
 //DB 연결을 위한 모듈 추가
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/wikiDB');
+mongoose.connect('mongodb://localhost/wikiDB/docs');
 var wikiDB = mongoose.connection;
 wikiDB.once('open', function(){
 	console.log('DB connected');
 });
 wikiDB.on('error', function(res){
-	res.redirect('/dbError');
+	console.log('DB connect error');
 });
 //파싱을 위한 모듈 추가
 var bodyParser = require('body-parser');
